@@ -1,0 +1,956 @@
+2025-01-07 15:48:20 INFO  [background-preinit] Version - HV000001: Hibernate Validator 6.2.4.Final
+2025-01-07 15:48:20 INFO  [restartedMain] CustomerPortalApplication - Starting CustomerPortalApplication using Java 1.8.0_202 on ComUnus with PID 17472 (D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend\target\classes started by ComUnus 229 in D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend)
+2025-01-07 15:48:20 DEBUG [restartedMain] CustomerPortalApplication - Running with Spring Boot v2.7.3, Spring v5.3.22
+2025-01-07 15:48:20 INFO  [restartedMain] CustomerPortalApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-07 15:48:20 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-07 15:48:20 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-07 15:48:21 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-07 15:48:21 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2025-01-07 15:48:21 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-07 15:48:21 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1153 ms
+2025-01-07 15:48:21 INFO  [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+2025-01-07 15:48:22 INFO  [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+2025-01-07 15:48:22 INFO  [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:feb21baa-cb44-4165-9361-26b2a8f52e56'
+2025-01-07 15:48:22 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-07 15:48:22 INFO  [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+2025-01-07 15:48:22 INFO  [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-01-07 15:48:22 INFO  [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-01-07 15:48:22 INFO  [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-07 15:48:22 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 15:48:22 WARN  [restartedMain] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'jwtAuthenticationEntryPoint'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.customer_portal.jwtConfig.JwtAuthenticationEntryPoint' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-01-07 15:48:22 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 15:48:22 INFO  [restartedMain] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-01-07 15:48:22 WARN  [restartedMain] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-01-07 15:48:22 INFO  [restartedMain] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-07 15:48:22 INFO  [restartedMain] HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-07 15:48:22 INFO  [restartedMain] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-01-07 15:48:22 ERROR [restartedMain] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field jwtAuthenticationEntryPoint in com.customer_portal.jwtConfig.WebSecurityConfig required a bean of type 'com.customer_portal.jwtConfig.JwtAuthenticationEntryPoint' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.customer_portal.jwtConfig.JwtAuthenticationEntryPoint' in your configuration.
+
+2025-01-07 15:50:03 INFO  [restartedMain] CustomerPortalApplication - Starting CustomerPortalApplication using Java 1.8.0_202 on ComUnus with PID 16132 (D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend\target\classes started by ComUnus 229 in D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend)
+2025-01-07 15:50:03 INFO  [background-preinit] Version - HV000001: Hibernate Validator 6.2.4.Final
+2025-01-07 15:50:03 DEBUG [restartedMain] CustomerPortalApplication - Running with Spring Boot v2.7.3, Spring v5.3.22
+2025-01-07 15:50:03 INFO  [restartedMain] CustomerPortalApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-07 15:50:03 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-07 15:50:03 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-07 15:50:03 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-07 15:50:03 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2025-01-07 15:50:04 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-07 15:50:04 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1135 ms
+2025-01-07 15:50:04 INFO  [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+2025-01-07 15:50:04 INFO  [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+2025-01-07 15:50:04 INFO  [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dd057f33-0f68-4065-80db-6edcb49e59f0'
+2025-01-07 15:50:04 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-07 15:50:04 INFO  [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+2025-01-07 15:50:04 INFO  [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-01-07 15:50:04 INFO  [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-01-07 15:50:05 INFO  [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-07 15:50:05 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 15:50:05 WARN  [restartedMain] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'jwtUserDetailsService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.core.userdetails.UserDetailsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-01-07 15:50:05 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 15:50:05 INFO  [restartedMain] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-01-07 15:50:05 WARN  [restartedMain] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-01-07 15:50:05 INFO  [restartedMain] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-07 15:50:05 INFO  [restartedMain] HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-07 15:50:05 INFO  [restartedMain] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-01-07 15:50:05 ERROR [restartedMain] LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field jwtUserDetailsService in com.customer_portal.jwtConfig.WebSecurityConfig required a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' in your configuration.
+
+2025-01-07 15:55:09 INFO  [background-preinit] Version - HV000001: Hibernate Validator 6.2.4.Final
+2025-01-07 15:55:09 INFO  [restartedMain] CustomerPortalApplication - Starting CustomerPortalApplication using Java 1.8.0_202 on ComUnus with PID 1932 (D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend\target\classes started by ComUnus 229 in D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend)
+2025-01-07 15:55:09 DEBUG [restartedMain] CustomerPortalApplication - Running with Spring Boot v2.7.3, Spring v5.3.22
+2025-01-07 15:55:09 INFO  [restartedMain] CustomerPortalApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-07 15:55:09 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-07 15:55:09 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-07 15:55:10 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-07 15:55:10 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2025-01-07 15:55:10 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-07 15:55:11 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1133 ms
+2025-01-07 15:55:11 INFO  [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+2025-01-07 15:55:11 INFO  [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+2025-01-07 15:55:11 INFO  [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:77c51d98-0e18-468f-9baa-dd822ae9f0e4'
+2025-01-07 15:55:11 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-07 15:55:11 INFO  [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+2025-01-07 15:55:11 INFO  [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-01-07 15:55:11 INFO  [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-01-07 15:55:11 INFO  [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-07 15:55:11 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 15:55:11 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-07 15:55:12 INFO  [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@dd84d36, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26dce525, org.springframework.security.web.context.SecurityContextPersistenceFilter@1029a15d, org.springframework.security.web.header.HeaderWriterFilter@3d4799a7, org.springframework.web.filter.CorsFilter@7421704b, org.springframework.security.web.authentication.logout.LogoutFilter@a1e1fd0, com.customer_portal.jwtConfig.JwtTokenValidationFilter@267a4722, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ee1f258, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5da08372, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69841f26, org.springframework.security.web.session.SessionManagementFilter@34dac734, org.springframework.security.web.access.ExceptionTranslationFilter@6528792, org.springframework.security.web.access.intercept.AuthorizationFilter@7c9ae6be]
+2025-01-07 15:55:12 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-07 15:55:12 WARN  [restartedMain] ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2025-01-07 15:55:12 INFO  [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-01-07 15:55:12 INFO  [restartedMain] DocumentationPluginsBootstrapper - Context refreshed
+2025-01-07 15:55:12 INFO  [restartedMain] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-01-07 15:55:12 INFO  [restartedMain] ApiListingReferenceScanner - Scanning for api listing references
+2025-01-07 15:55:12 INFO  [restartedMain] CustomerPortalApplication - Started CustomerPortalApplication in 2.816 seconds (JVM running for 3.417)
+2025-01-07 15:55:12 INFO  [restartedMain] CustomerPortalApplication - -----------     ****......  Spring Boot Application Run SuccessFully  .....****     ------------
+2025-01-07 15:55:21 INFO  [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-07 15:55:21 INFO  [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 1 ms
+2025-01-07 15:55:21 ERROR [http-nio-8080-exec-1] JwtAuthenticationEntryPoint - Unauthorized error: Full authentication is required to access this resource
+2025-01-07 15:55:21 ERROR [http-nio-8080-exec-2] JwtAuthenticationEntryPoint - Unauthorized error: Full authentication is required to access this resource
+2025-01-07 15:55:39 ERROR [http-nio-8080-exec-5] JwtAuthenticationEntryPoint - Unauthorized error: Full authentication is required to access this resource
+2025-01-07 15:55:39 ERROR [http-nio-8080-exec-7] JwtAuthenticationEntryPoint - Unauthorized error: Full authentication is required to access this resource
+2025-01-07 15:56:16 ERROR [http-nio-8080-exec-8] JwtAuthenticationEntryPoint - Unauthorized error: Full authentication is required to access this resource
+2025-01-07 15:56:16 ERROR [http-nio-8080-exec-10] JwtAuthenticationEntryPoint - Unauthorized error: Full authentication is required to access this resource
+2025-01-07 15:56:49 INFO  [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-01-07 15:56:49 INFO  [Thread-6] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 15:56:49 INFO  [Thread-6] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-01-07 15:56:49 WARN  [Thread-6] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-01-07 15:56:49 INFO  [Thread-6] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-07 15:56:49 INFO  [Thread-6] HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-07 15:56:49 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-07 15:56:49 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-07 15:56:49 INFO  [restartedMain] CustomerPortalApplication - Starting CustomerPortalApplication using Java 1.8.0_202 on ComUnus with PID 1932 (D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend\target\classes started by ComUnus 229 in D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend)
+2025-01-07 15:56:49 DEBUG [restartedMain] CustomerPortalApplication - Running with Spring Boot v2.7.3, Spring v5.3.22
+2025-01-07 15:56:49 INFO  [restartedMain] CustomerPortalApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-07 15:56:49 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-07 15:56:49 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-01-07 15:56:49 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-07 15:56:49 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 259 ms
+2025-01-07 15:56:49 INFO  [restartedMain] HikariDataSource - HikariPool-2 - Starting...
+2025-01-07 15:56:49 INFO  [restartedMain] HikariDataSource - HikariPool-2 - Start completed.
+2025-01-07 15:56:49 INFO  [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dfc92230-e6a1-4b39-80f5-4e09e0a4e10a'
+2025-01-07 15:56:49 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-07 15:56:49 INFO  [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-01-07 15:56:49 INFO  [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-07 15:56:49 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 15:56:50 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-07 15:56:50 INFO  [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1863e9d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2cca9b69, org.springframework.security.web.context.SecurityContextPersistenceFilter@494266e8, org.springframework.security.web.header.HeaderWriterFilter@56446f52, org.springframework.web.filter.CorsFilter@4e1cdc4d, org.springframework.security.web.authentication.logout.LogoutFilter@27c15410, com.customer_portal.jwtConfig.JwtTokenValidationFilter@721126b6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@abb4d0e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ff08df4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42d38cbf, org.springframework.security.web.session.SessionManagementFilter@59eb7eff, org.springframework.security.web.access.ExceptionTranslationFilter@22fc38c6, org.springframework.security.web.access.intercept.AuthorizationFilter@ca612fa]
+2025-01-07 15:56:50 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-07 15:56:50 WARN  [restartedMain] ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2025-01-07 15:56:50 INFO  [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-01-07 15:56:50 INFO  [restartedMain] DocumentationPluginsBootstrapper - Context refreshed
+2025-01-07 15:56:50 INFO  [restartedMain] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-01-07 15:56:50 INFO  [restartedMain] ApiListingReferenceScanner - Scanning for api listing references
+2025-01-07 15:56:50 INFO  [restartedMain] CustomerPortalApplication - Started CustomerPortalApplication in 0.576 seconds (JVM running for 101.037)
+2025-01-07 15:56:50 INFO  [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-01-07 15:56:50 INFO  [restartedMain] CustomerPortalApplication - -----------     ****......  Spring Boot Application Run SuccessFully  .....****     ------------
+2025-01-07 15:57:07 INFO  [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-01-07 15:57:07 INFO  [Thread-13] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 15:57:07 INFO  [Thread-13] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-01-07 15:57:08 WARN  [Thread-13] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-01-07 15:57:08 INFO  [Thread-13] HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-01-07 15:57:08 INFO  [Thread-13] HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-01-07 15:57:08 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-07 15:57:08 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-07 15:57:08 INFO  [restartedMain] CustomerPortalApplication - Starting CustomerPortalApplication using Java 1.8.0_202 on ComUnus with PID 1932 (D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend\target\classes started by ComUnus 229 in D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend)
+2025-01-07 15:57:08 DEBUG [restartedMain] CustomerPortalApplication - Running with Spring Boot v2.7.3, Spring v5.3.22
+2025-01-07 15:57:08 INFO  [restartedMain] CustomerPortalApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-07 15:57:08 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-07 15:57:08 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2025-01-07 15:57:08 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-07 15:57:08 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 207 ms
+2025-01-07 15:57:08 INFO  [restartedMain] HikariDataSource - HikariPool-3 - Starting...
+2025-01-07 15:57:08 INFO  [restartedMain] HikariDataSource - HikariPool-3 - Start completed.
+2025-01-07 15:57:08 INFO  [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:8c3d4ae5-445c-43d3-bd9e-497df8576068'
+2025-01-07 15:57:08 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-07 15:57:08 INFO  [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-01-07 15:57:08 INFO  [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-07 15:57:08 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 15:57:08 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-07 15:57:08 INFO  [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1ca23938, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@568133a4, org.springframework.security.web.context.SecurityContextPersistenceFilter@55147e5d, org.springframework.security.web.header.HeaderWriterFilter@2b02cb65, org.springframework.web.filter.CorsFilter@1e0421da, org.springframework.security.web.authentication.logout.LogoutFilter@3b6e30f8, com.customer_portal.jwtConfig.JwtTokenValidationFilter@4046d894, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69c559cf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5421fe71, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4da0425d, org.springframework.security.web.session.SessionManagementFilter@4a1a6b92, org.springframework.security.web.access.ExceptionTranslationFilter@4a6ec070, org.springframework.security.web.access.intercept.AuthorizationFilter@232fa668]
+2025-01-07 15:57:08 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-07 15:57:08 WARN  [restartedMain] ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2025-01-07 15:57:08 INFO  [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-01-07 15:57:08 INFO  [restartedMain] DocumentationPluginsBootstrapper - Context refreshed
+2025-01-07 15:57:08 INFO  [restartedMain] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-01-07 15:57:08 INFO  [restartedMain] ApiListingReferenceScanner - Scanning for api listing references
+2025-01-07 15:57:08 INFO  [restartedMain] CustomerPortalApplication - Started CustomerPortalApplication in 0.547 seconds (JVM running for 119.646)
+2025-01-07 15:57:08 INFO  [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-01-07 15:57:08 INFO  [restartedMain] CustomerPortalApplication - -----------     ****......  Spring Boot Application Run SuccessFully  .....****     ------------
+2025-01-07 15:57:56 INFO  [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-07 15:57:56 INFO  [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 4 ms
+2025-01-07 16:00:45 INFO  [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-01-07 16:00:46 INFO  [Thread-20] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 16:00:46 INFO  [Thread-20] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-01-07 16:00:46 WARN  [Thread-20] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-01-07 16:00:46 INFO  [Thread-20] HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-01-07 16:00:46 INFO  [Thread-20] HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-01-07 16:00:46 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-07 16:00:46 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-07 16:00:46 INFO  [restartedMain] CustomerPortalApplication - Starting CustomerPortalApplication using Java 1.8.0_202 on ComUnus with PID 1932 (D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend\target\classes started by ComUnus 229 in D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend)
+2025-01-07 16:00:46 DEBUG [restartedMain] CustomerPortalApplication - Running with Spring Boot v2.7.3, Spring v5.3.22
+2025-01-07 16:00:46 INFO  [restartedMain] CustomerPortalApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-07 16:00:47 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-07 16:00:47 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2025-01-07 16:00:47 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-07 16:00:47 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 408 ms
+2025-01-07 16:00:47 INFO  [restartedMain] HikariDataSource - HikariPool-4 - Starting...
+2025-01-07 16:00:47 INFO  [restartedMain] HikariDataSource - HikariPool-4 - Start completed.
+2025-01-07 16:00:47 INFO  [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://15.207.107.111:3306/farm_uat'
+2025-01-07 16:00:47 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-07 16:00:47 INFO  [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2025-01-07 16:00:47 INFO  [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-07 16:00:47 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 16:00:47 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-07 16:00:47 INFO  [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@605e89d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9eaff55, org.springframework.security.web.context.SecurityContextPersistenceFilter@43406a01, org.springframework.security.web.header.HeaderWriterFilter@18b744c7, org.springframework.web.filter.CorsFilter@544e6b6a, org.springframework.security.web.authentication.logout.LogoutFilter@779f0fff, com.customer_portal.jwtConfig.JwtTokenValidationFilter@73072925, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@216b7290, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d89b06, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a6f76d8, org.springframework.security.web.session.SessionManagementFilter@7c791b4b, org.springframework.security.web.access.ExceptionTranslationFilter@60804930, org.springframework.security.web.access.intercept.AuthorizationFilter@4adda660]
+2025-01-07 16:00:47 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-07 16:00:48 WARN  [restartedMain] ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/mail/ (please add some templates or check your Thymeleaf configuration)
+2025-01-07 16:00:48 INFO  [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/farm'
+2025-01-07 16:00:48 INFO  [restartedMain] DocumentationPluginsBootstrapper - Context refreshed
+2025-01-07 16:00:48 INFO  [restartedMain] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-01-07 16:00:48 INFO  [restartedMain] ApiListingReferenceScanner - Scanning for api listing references
+2025-01-07 16:00:48 INFO  [restartedMain] CustomerPortalApplication - Started CustomerPortalApplication in 1.245 seconds (JVM running for 338.963)
+2025-01-07 16:00:48 INFO  [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   MailSenderAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.mail.internet.MimeMessage', 'javax.activation.MimeType', 'org.springframework.mail.MailSender' (OnClassCondition)
+      - AnyNestedCondition 1 matched 1 did not; NestedCondition on MailSenderAutoConfiguration.MailSenderCondition.JndiNameProperty @ConditionalOnProperty (spring.mail.jndi-name) did not find property 'jndi-name'; NestedCondition on MailSenderAutoConfiguration.MailSenderCondition.HostProperty @ConditionalOnProperty (spring.mail.host) matched (MailSenderAutoConfiguration.MailSenderCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.mail.MailSender; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MailSenderPropertiesConfiguration matched:
+      - @ConditionalOnProperty (spring.mail.host) matched (OnPropertyCondition)
+
+   MailSenderPropertiesConfiguration#mailSender matched:
+      - @ConditionalOnMissingBean (types: org.springframework.mail.javamail.JavaMailSender; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   MailSenderJndiConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.mail.jndi-name) did not find property 'jndi-name' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'javax.mail.Session' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-01-07 16:00:48 INFO  [restartedMain] CustomerPortalApplication - -----------     ****......  Spring Boot Application Run SuccessFully  .....****     ------------
+2025-01-07 16:01:23 INFO  [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-01-07 16:01:23 INFO  [Thread-26] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 16:01:23 INFO  [Thread-26] HikariDataSource - HikariPool-4 - Shutdown initiated...
+2025-01-07 16:01:23 INFO  [Thread-26] HikariDataSource - HikariPool-4 - Shutdown completed.
+2025-01-07 16:01:23 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-07 16:01:23 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-07 16:01:23 INFO  [restartedMain] CustomerPortalApplication - Starting CustomerPortalApplication using Java 1.8.0_202 on ComUnus with PID 1932 (D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend\target\classes started by ComUnus 229 in D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend)
+2025-01-07 16:01:23 DEBUG [restartedMain] CustomerPortalApplication - Running with Spring Boot v2.7.3, Spring v5.3.22
+2025-01-07 16:01:23 INFO  [restartedMain] CustomerPortalApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-07 16:01:23 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-07 16:01:23 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-01-07 16:01:24 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-07 16:01:24 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 353 ms
+2025-01-07 16:01:24 INFO  [restartedMain] HikariDataSource - HikariPool-5 - Starting...
+2025-01-07 16:01:24 INFO  [restartedMain] HikariDataSource - HikariPool-5 - Start completed.
+2025-01-07 16:01:24 INFO  [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:0534a239-aa36-451c-9e5d-ed92a6ea8ffe'
+2025-01-07 16:01:24 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-07 16:01:24 INFO  [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-01-07 16:01:24 INFO  [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-07 16:01:24 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 16:01:24 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-07 16:01:24 INFO  [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@30aa3b73, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2149dc83, org.springframework.security.web.context.SecurityContextPersistenceFilter@3ec64f51, org.springframework.security.web.header.HeaderWriterFilter@4d873a74, org.springframework.web.filter.CorsFilter@4347a2d2, org.springframework.security.web.authentication.logout.LogoutFilter@5ce9b366, com.customer_portal.jwtConfig.JwtTokenValidationFilter@3a160075, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@361e7da8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@423ea585, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b86d5e7, org.springframework.security.web.session.SessionManagementFilter@32640223, org.springframework.security.web.access.ExceptionTranslationFilter@5a7a4544, org.springframework.security.web.access.intercept.AuthorizationFilter@2e7aea4d]
+2025-01-07 16:01:24 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-07 16:01:24 WARN  [restartedMain] ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2025-01-07 16:01:24 INFO  [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/customer-portal'
+2025-01-07 16:01:24 INFO  [restartedMain] DocumentationPluginsBootstrapper - Context refreshed
+2025-01-07 16:01:24 INFO  [restartedMain] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-01-07 16:01:24 INFO  [restartedMain] ApiListingReferenceScanner - Scanning for api listing references
+2025-01-07 16:01:24 INFO  [restartedMain] CustomerPortalApplication - Started CustomerPortalApplication in 0.693 seconds (JVM running for 375.246)
+2025-01-07 16:01:24 INFO  [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   MailSenderAutoConfiguration:
+      Did not match:
+         - AnyNestedCondition 0 matched 2 did not; NestedCondition on MailSenderAutoConfiguration.MailSenderCondition.JndiNameProperty @ConditionalOnProperty (spring.mail.jndi-name) did not find property 'jndi-name'; NestedCondition on MailSenderAutoConfiguration.MailSenderCondition.HostProperty @ConditionalOnProperty (spring.mail.host) did not find property 'host' (MailSenderAutoConfiguration.MailSenderCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'javax.mail.internet.MimeMessage', 'javax.activation.MimeType', 'org.springframework.mail.MailSender' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-01-07 16:01:24 INFO  [restartedMain] CustomerPortalApplication - -----------     ****......  Spring Boot Application Run SuccessFully  .....****     ------------
+2025-01-07 16:02:12 INFO  [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-07 16:02:12 INFO  [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 7 ms
+2025-01-07 16:02:32 INFO  [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-01-07 16:02:32 INFO  [Thread-32] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 16:02:32 INFO  [Thread-32] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-01-07 16:02:33 WARN  [Thread-32] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-01-07 16:02:33 INFO  [Thread-32] HikariDataSource - HikariPool-5 - Shutdown initiated...
+2025-01-07 16:02:33 INFO  [Thread-32] HikariDataSource - HikariPool-5 - Shutdown completed.
+2025-01-07 16:02:33 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-07 16:02:33 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-07 16:02:33 INFO  [restartedMain] CustomerPortalApplication - Starting CustomerPortalApplication using Java 1.8.0_202 on ComUnus with PID 1932 (D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend\target\classes started by ComUnus 229 in D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend)
+2025-01-07 16:02:33 DEBUG [restartedMain] CustomerPortalApplication - Running with Spring Boot v2.7.3, Spring v5.3.22
+2025-01-07 16:02:33 INFO  [restartedMain] CustomerPortalApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-07 16:02:33 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-07 16:02:33 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2025-01-07 16:02:33 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-07 16:02:33 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 231 ms
+2025-01-07 16:02:33 INFO  [restartedMain] HikariDataSource - HikariPool-6 - Starting...
+2025-01-07 16:02:33 INFO  [restartedMain] HikariDataSource - HikariPool-6 - Start completed.
+2025-01-07 16:02:33 INFO  [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:98254fb3-e206-4224-9181-92b02440501f'
+2025-01-07 16:02:33 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-07 16:02:33 INFO  [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-01-07 16:02:33 INFO  [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-07 16:02:33 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 16:02:33 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-07 16:02:33 INFO  [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@214d78af, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c5a9998, org.springframework.security.web.context.SecurityContextPersistenceFilter@53231f23, org.springframework.security.web.header.HeaderWriterFilter@3b7f011a, org.springframework.web.filter.CorsFilter@7673783d, org.springframework.security.web.authentication.logout.LogoutFilter@3f105741, com.customer_portal.jwtConfig.JwtTokenValidationFilter@30ec767e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@673d1531, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2409bf1d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7aaee8cc, org.springframework.security.web.session.SessionManagementFilter@7464978e, org.springframework.security.web.access.ExceptionTranslationFilter@7278ca5c, org.springframework.security.web.access.intercept.AuthorizationFilter@5993e944]
+2025-01-07 16:02:33 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-07 16:02:33 WARN  [restartedMain] ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2025-01-07 16:02:33 INFO  [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/customer-portal'
+2025-01-07 16:02:33 INFO  [restartedMain] DocumentationPluginsBootstrapper - Context refreshed
+2025-01-07 16:02:33 INFO  [restartedMain] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-01-07 16:02:33 INFO  [restartedMain] ApiListingReferenceScanner - Scanning for api listing references
+2025-01-07 16:02:33 INFO  [restartedMain] CustomerPortalApplication - Started CustomerPortalApplication in 0.498 seconds (JVM running for 444.6)
+2025-01-07 16:02:33 INFO  [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-01-07 16:02:33 INFO  [restartedMain] CustomerPortalApplication - -----------     ****......  Spring Boot Application Run SuccessFully  .....****     ------------
+2025-01-07 16:30:30 INFO  [RMI TCP Connection(65)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-01-07 16:30:30 INFO  [RMI TCP Connection(65)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 16:30:30 INFO  [RMI TCP Connection(65)-127.0.0.1] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-01-07 16:30:30 WARN  [RMI TCP Connection(65)-127.0.0.1] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-01-07 16:30:30 INFO  [RMI TCP Connection(65)-127.0.0.1] HikariDataSource - HikariPool-6 - Shutdown initiated...
+2025-01-07 16:30:30 INFO  [RMI TCP Connection(65)-127.0.0.1] HikariDataSource - HikariPool-6 - Shutdown completed.
+2025-01-08 12:14:50 INFO  [background-preinit] Version - HV000001: Hibernate Validator 6.2.4.Final
+2025-01-08 12:14:50 INFO  [restartedMain] CustomerPortalApplication - Starting CustomerPortalApplication using Java 1.8.0_202 on ComUnus with PID 2000 (D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend\target\classes started by ComUnus 229 in D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend)
+2025-01-08 12:14:50 DEBUG [restartedMain] CustomerPortalApplication - Running with Spring Boot v2.7.3, Spring v5.3.22
+2025-01-08 12:14:50 INFO  [restartedMain] CustomerPortalApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 12:14:50 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 12:14:50 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 12:14:52 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 12:14:52 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interfaces.
+2025-01-08 12:14:53 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-08 12:14:54 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3648 ms
+2025-01-08 12:14:54 ERROR [restartedMain] TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'h2Console' defined in class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: org.postgresql.Driver
+2025-01-08 12:14:54 WARN  [restartedMain] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2025-01-08 12:14:54 INFO  [restartedMain] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-01-08 12:14:54 ERROR [restartedMain] SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.customer_portal.CustomerPortalApplication.main(CustomerPortalApplication.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:479)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:211)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:184)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	... 13 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'h2Console' defined in class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: org.postgresql.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:212)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:203)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:97)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:262)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:236)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5219)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:265)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123)
+	... 18 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: org.postgresql.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 58 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: org.postgresql.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1616)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.resolveStream(DefaultListableBeanFactory.java:2119)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.orderedStream(DefaultListableBeanFactory.java:2113)
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.logDataSources(H2ConsoleAutoConfiguration.java:74)
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.h2Console(H2ConsoleAutoConfiguration.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 59 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: org.postgresql.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 82 more
+Caused by: java.lang.IllegalStateException: Cannot load driver class: org.postgresql.Driver
+	at org.springframework.util.Assert.state(Assert.java:97)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:171)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:123)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 83 more
+2025-01-08 12:16:05 INFO  [background-preinit] Version - HV000001: Hibernate Validator 6.2.4.Final
+2025-01-08 12:16:05 INFO  [restartedMain] CustomerPortalApplication - Starting CustomerPortalApplication using Java 1.8.0_202 on ComUnus with PID 19448 (D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend\target\classes started by ComUnus 229 in D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend)
+2025-01-08 12:16:05 DEBUG [restartedMain] CustomerPortalApplication - Running with Spring Boot v2.7.3, Spring v5.3.22
+2025-01-08 12:16:05 INFO  [restartedMain] CustomerPortalApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 12:16:05 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 12:16:05 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 12:16:06 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 12:16:06 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2025-01-08 12:16:07 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-08 12:16:07 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1912 ms
+2025-01-08 12:16:07 ERROR [restartedMain] TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'h2Console' defined in class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: org.postgresql.Driver
+2025-01-08 12:16:07 WARN  [restartedMain] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2025-01-08 12:16:07 INFO  [restartedMain] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-01-08 12:16:07 ERROR [restartedMain] SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.customer_portal.CustomerPortalApplication.main(CustomerPortalApplication.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:479)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:211)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:184)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	... 13 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'h2Console' defined in class path resource [org/springframework/boot/autoconfigure/h2/H2ConsoleAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: org.postgresql.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:212)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:203)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:97)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:262)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:236)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5219)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1396)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1386)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:919)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:265)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:432)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123)
+	... 18 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.web.servlet.ServletRegistrationBean]: Factory method 'h2Console' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: org.postgresql.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 58 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: org.postgresql.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1616)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.resolveStream(DefaultListableBeanFactory.java:2119)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.orderedStream(DefaultListableBeanFactory.java:2113)
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.logDataSources(H2ConsoleAutoConfiguration.java:74)
+	at org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration.h2Console(H2ConsoleAutoConfiguration.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 59 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: org.postgresql.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 82 more
+Caused by: java.lang.IllegalStateException: Cannot load driver class: org.postgresql.Driver
+	at org.springframework.util.Assert.state(Assert.java:97)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:171)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:123)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:48)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 83 more
+2025-01-08 12:17:19 INFO  [background-preinit] Version - HV000001: Hibernate Validator 6.2.4.Final
+2025-01-08 12:17:19 INFO  [restartedMain] CustomerPortalApplication - Starting CustomerPortalApplication using Java 1.8.0_202 on ComUnus with PID 17112 (D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend\target\classes started by ComUnus 229 in D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend)
+2025-01-08 12:17:19 DEBUG [restartedMain] CustomerPortalApplication - Running with Spring Boot v2.7.3, Spring v5.3.22
+2025-01-08 12:17:19 INFO  [restartedMain] CustomerPortalApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 12:17:19 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 12:17:19 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 12:17:20 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 12:17:20 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2025-01-08 12:17:21 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-08 12:17:21 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1985 ms
+2025-01-08 12:17:21 INFO  [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+2025-01-08 12:17:21 INFO  [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+2025-01-08 12:17:21 INFO  [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:a8db9fe6-2325-4350-a9e3-f30d3ae1df51'
+2025-01-08 12:17:21 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 12:17:21 INFO  [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+2025-01-08 12:17:22 INFO  [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-01-08 12:17:22 INFO  [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-01-08 12:17:23 INFO  [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-08 12:17:23 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 12:17:24 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-08 12:17:24 INFO  [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2493ad65, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d52d5c, org.springframework.security.web.context.SecurityContextPersistenceFilter@570e7296, org.springframework.security.web.header.HeaderWriterFilter@286629f6, org.springframework.web.filter.CorsFilter@67afb5d, org.springframework.security.web.authentication.logout.LogoutFilter@2449a06f, com.customer_portal.jwtConfig.JwtTokenValidationFilter@4b7bde8a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58e9823f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@500c2410, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@72baaa05, org.springframework.security.web.session.SessionManagementFilter@37a4c787, org.springframework.security.web.access.ExceptionTranslationFilter@bbd2586, org.springframework.security.web.access.intercept.AuthorizationFilter@36020c5f]
+2025-01-08 12:17:24 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08 12:17:24 WARN  [restartedMain] ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2025-01-08 12:17:24 INFO  [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/customer-portal'
+2025-01-08 12:17:24 INFO  [restartedMain] DocumentationPluginsBootstrapper - Context refreshed
+2025-01-08 12:17:24 INFO  [restartedMain] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-01-08 12:17:24 INFO  [restartedMain] ApiListingReferenceScanner - Scanning for api listing references
+2025-01-08 12:17:25 INFO  [restartedMain] CustomerPortalApplication - Started CustomerPortalApplication in 6.267 seconds (JVM running for 7.271)
+2025-01-08 12:17:25 INFO  [restartedMain] CustomerPortalApplication - -----------     ****......  Spring Boot Application Run SuccessFully  .....****     ------------
+2025-01-08 12:17:30 INFO  [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-08 12:17:30 INFO  [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 3 ms
+2025-01-08 12:19:57 INFO  [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-01-08 12:19:57 INFO  [Thread-6] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 12:19:57 INFO  [Thread-6] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-01-08 12:19:57 WARN  [Thread-6] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-01-08 12:19:57 INFO  [Thread-6] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-08 12:19:57 INFO  [Thread-6] HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-08 12:19:57 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 12:19:57 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 12:19:57 INFO  [restartedMain] CustomerPortalApplication - Starting CustomerPortalApplication using Java 1.8.0_202 on ComUnus with PID 17112 (D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend\target\classes started by ComUnus 229 in D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend)
+2025-01-08 12:19:57 DEBUG [restartedMain] CustomerPortalApplication - Running with Spring Boot v2.7.3, Spring v5.3.22
+2025-01-08 12:19:57 INFO  [restartedMain] CustomerPortalApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 12:19:58 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 12:19:58 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2025-01-08 12:19:58 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-08 12:19:58 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 500 ms
+2025-01-08 12:19:58 INFO  [restartedMain] HikariDataSource - HikariPool-2 - Starting...
+2025-01-08 12:19:58 INFO  [restartedMain] HikariDataSource - HikariPool-2 - Start completed.
+2025-01-08 12:19:58 INFO  [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:9afa6122-887f-4d3a-89b2-5e813730b551'
+2025-01-08 12:19:58 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 12:19:58 INFO  [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-01-08 12:19:58 INFO  [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-08 12:19:58 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 12:19:58 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-08 12:19:58 INFO  [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1290e707, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@360e87f8, org.springframework.security.web.context.SecurityContextPersistenceFilter@7165d9ab, org.springframework.security.web.header.HeaderWriterFilter@5122352b, org.springframework.web.filter.CorsFilter@1d04cd1c, org.springframework.security.web.authentication.logout.LogoutFilter@4f3d60e5, com.customer_portal.jwtConfig.JwtTokenValidationFilter@7d370f8c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d508765, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d9b6289, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@688a67f2, org.springframework.security.web.session.SessionManagementFilter@18eabed2, org.springframework.security.web.access.ExceptionTranslationFilter@7ed2417b, org.springframework.security.web.access.intercept.AuthorizationFilter@50c612b2]
+2025-01-08 12:19:58 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08 12:19:58 WARN  [restartedMain] ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2025-01-08 12:19:58 INFO  [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/customer-portal'
+2025-01-08 12:19:58 INFO  [restartedMain] DocumentationPluginsBootstrapper - Context refreshed
+2025-01-08 12:19:58 INFO  [restartedMain] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-01-08 12:19:58 INFO  [restartedMain] ApiListingReferenceScanner - Scanning for api listing references
+2025-01-08 12:19:59 INFO  [restartedMain] CustomerPortalApplication - Started CustomerPortalApplication in 1.179 seconds (JVM running for 161.158)
+2025-01-08 12:19:59 INFO  [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-01-08 12:19:59 INFO  [restartedMain] CustomerPortalApplication - -----------     ****......  Spring Boot Application Run SuccessFully  .....****     ------------
+2025-01-08 12:20:09 INFO  [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-08 12:20:09 INFO  [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 4 ms
+2025-01-08 12:21:12 INFO  [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-01-08 12:21:12 INFO  [Thread-13] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 12:21:12 INFO  [Thread-13] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-01-08 12:21:13 WARN  [Thread-13] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-01-08 12:21:13 INFO  [Thread-13] HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-01-08 12:21:13 INFO  [Thread-13] HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-01-08 12:21:13 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 12:21:13 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 12:21:13 INFO  [restartedMain] CustomerPortalApplication - Starting CustomerPortalApplication using Java 1.8.0_202 on ComUnus with PID 17112 (D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend\target\classes started by ComUnus 229 in D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend)
+2025-01-08 12:21:13 DEBUG [restartedMain] CustomerPortalApplication - Running with Spring Boot v2.7.3, Spring v5.3.22
+2025-01-08 12:21:13 INFO  [restartedMain] CustomerPortalApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 12:21:13 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 12:21:13 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2025-01-08 12:21:13 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-08 12:21:13 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 484 ms
+2025-01-08 12:21:13 INFO  [restartedMain] HikariDataSource - HikariPool-3 - Starting...
+2025-01-08 12:21:13 INFO  [restartedMain] HikariDataSource - HikariPool-3 - Start completed.
+2025-01-08 12:21:13 INFO  [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:5214cf2b-03a2-4e2c-854b-34b8597a3ef6'
+2025-01-08 12:21:13 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 12:21:13 INFO  [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-01-08 12:21:14 INFO  [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-08 12:21:14 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 12:21:14 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-08 12:21:14 INFO  [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@72f48e91, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4cfa9ea6, org.springframework.security.web.context.SecurityContextPersistenceFilter@7465cfc3, org.springframework.security.web.header.HeaderWriterFilter@3ac996fd, org.springframework.web.filter.CorsFilter@76ea4163, org.springframework.security.web.authentication.logout.LogoutFilter@2e821647, com.customer_portal.jwtConfig.JwtTokenValidationFilter@35f4be5b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43253049, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@352d38ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63a22e72, org.springframework.security.web.session.SessionManagementFilter@5ac36d85, org.springframework.security.web.access.ExceptionTranslationFilter@2b438680, org.springframework.security.web.access.intercept.AuthorizationFilter@18fb64c9]
+2025-01-08 12:21:14 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08 12:21:14 WARN  [restartedMain] ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2025-01-08 12:21:14 INFO  [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/customer-portal'
+2025-01-08 12:21:14 INFO  [restartedMain] DocumentationPluginsBootstrapper - Context refreshed
+2025-01-08 12:21:14 INFO  [restartedMain] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-01-08 12:21:14 INFO  [restartedMain] ApiListingReferenceScanner - Scanning for api listing references
+2025-01-08 12:21:14 INFO  [restartedMain] CustomerPortalApplication - Started CustomerPortalApplication in 1.099 seconds (JVM running for 236.656)
+2025-01-08 12:21:14 INFO  [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-01-08 12:21:14 INFO  [restartedMain] CustomerPortalApplication - -----------     ****......  Spring Boot Application Run SuccessFully  .....****     ------------
+2025-01-08 12:21:21 INFO  [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-08 12:21:21 INFO  [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 3 ms
+2025-01-08 12:22:02 INFO  [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-01-08 12:22:02 INFO  [Thread-20] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 12:22:02 INFO  [Thread-20] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-01-08 12:22:03 WARN  [Thread-20] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-01-08 12:22:03 INFO  [Thread-20] HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-01-08 12:22:03 INFO  [Thread-20] HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-01-08 12:22:03 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 12:22:03 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 12:22:03 INFO  [restartedMain] CustomerPortalApplication - Starting CustomerPortalApplication using Java 1.8.0_202 on ComUnus with PID 17112 (D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend\target\classes started by ComUnus 229 in D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend)
+2025-01-08 12:22:03 DEBUG [restartedMain] CustomerPortalApplication - Running with Spring Boot v2.7.3, Spring v5.3.22
+2025-01-08 12:22:03 INFO  [restartedMain] CustomerPortalApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 12:22:03 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 12:22:03 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interfaces.
+2025-01-08 12:22:03 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-08 12:22:03 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 441 ms
+2025-01-08 12:22:03 INFO  [restartedMain] HikariDataSource - HikariPool-4 - Starting...
+2025-01-08 12:22:03 INFO  [restartedMain] HikariDataSource - HikariPool-4 - Start completed.
+2025-01-08 12:22:03 INFO  [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:21f065f3-1d67-4330-b150-437d489412d4'
+2025-01-08 12:22:03 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 12:22:03 INFO  [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-01-08 12:22:03 INFO  [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-08 12:22:03 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 12:22:04 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-08 12:22:04 INFO  [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@13c4c74, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52ec7b7c, org.springframework.security.web.context.SecurityContextPersistenceFilter@aa74a26, org.springframework.security.web.header.HeaderWriterFilter@4858e020, org.springframework.web.filter.CorsFilter@65080199, org.springframework.security.web.authentication.logout.LogoutFilter@6c67fc8b, com.customer_portal.jwtConfig.JwtTokenValidationFilter@31389750, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55dea2de, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a8811a5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@520422ef, org.springframework.security.web.session.SessionManagementFilter@421886f9, org.springframework.security.web.access.ExceptionTranslationFilter@319dd763, org.springframework.security.web.access.intercept.AuthorizationFilter@56104e96]
+2025-01-08 12:22:04 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08 12:22:04 WARN  [restartedMain] ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2025-01-08 12:22:04 INFO  [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/customer-portal'
+2025-01-08 12:22:04 INFO  [restartedMain] DocumentationPluginsBootstrapper - Context refreshed
+2025-01-08 12:22:04 INFO  [restartedMain] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-01-08 12:22:04 INFO  [restartedMain] ApiListingReferenceScanner - Scanning for api listing references
+2025-01-08 12:22:04 INFO  [restartedMain] CustomerPortalApplication - Started CustomerPortalApplication in 1.06 seconds (JVM running for 286.592)
+2025-01-08 12:22:04 INFO  [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-01-08 12:22:04 INFO  [restartedMain] CustomerPortalApplication - -----------     ****......  Spring Boot Application Run SuccessFully  .....****     ------------
+2025-01-08 12:22:08 INFO  [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-08 12:22:08 INFO  [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 2 ms
+2025-01-08 12:22:38 INFO  [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-01-08 12:22:38 INFO  [Thread-26] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 12:22:38 INFO  [Thread-26] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-01-08 12:22:38 WARN  [Thread-26] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-01-08 12:22:38 INFO  [Thread-26] HikariDataSource - HikariPool-4 - Shutdown initiated...
+2025-01-08 12:22:38 INFO  [Thread-26] HikariDataSource - HikariPool-4 - Shutdown completed.
+2025-01-08 12:22:39 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 12:22:39 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 12:22:39 INFO  [restartedMain] CustomerPortalApplication - Starting CustomerPortalApplication using Java 1.8.0_202 on ComUnus with PID 17112 (D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend\target\classes started by ComUnus 229 in D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend)
+2025-01-08 12:22:39 DEBUG [restartedMain] CustomerPortalApplication - Running with Spring Boot v2.7.3, Spring v5.3.22
+2025-01-08 12:22:39 INFO  [restartedMain] CustomerPortalApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 12:22:39 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 12:22:39 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2025-01-08 12:22:39 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-08 12:22:39 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 537 ms
+2025-01-08 12:22:39 INFO  [restartedMain] HikariDataSource - HikariPool-5 - Starting...
+2025-01-08 12:22:39 INFO  [restartedMain] HikariDataSource - HikariPool-5 - Start completed.
+2025-01-08 12:22:39 INFO  [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:4bf7cc23-2ae9-4846-8b3f-7e6b279692e5'
+2025-01-08 12:22:39 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 12:22:39 INFO  [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-01-08 12:22:39 INFO  [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-08 12:22:39 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 12:22:40 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-08 12:22:40 INFO  [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@65f6347e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ae9ce92, org.springframework.security.web.context.SecurityContextPersistenceFilter@65535b11, org.springframework.security.web.header.HeaderWriterFilter@5ae185a0, org.springframework.web.filter.CorsFilter@1941381b, org.springframework.security.web.authentication.logout.LogoutFilter@73e796e4, com.customer_portal.jwtConfig.JwtTokenValidationFilter@3fb7706c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a25c19d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6cbf8ffc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6bb6f620, org.springframework.security.web.session.SessionManagementFilter@57c6e14e, org.springframework.security.web.access.ExceptionTranslationFilter@74957799, org.springframework.security.web.access.intercept.AuthorizationFilter@778a3b44]
+2025-01-08 12:22:40 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08 12:22:40 WARN  [restartedMain] ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2025-01-08 12:22:40 INFO  [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/customer-portal'
+2025-01-08 12:22:40 INFO  [restartedMain] DocumentationPluginsBootstrapper - Context refreshed
+2025-01-08 12:22:40 INFO  [restartedMain] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-01-08 12:22:40 INFO  [restartedMain] ApiListingReferenceScanner - Scanning for api listing references
+2025-01-08 12:22:40 INFO  [restartedMain] CustomerPortalApplication - Started CustomerPortalApplication in 1.301 seconds (JVM running for 322.648)
+2025-01-08 12:22:40 INFO  [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-01-08 12:22:40 INFO  [restartedMain] CustomerPortalApplication - -----------     ****......  Spring Boot Application Run SuccessFully  .....****     ------------
+2025-01-08 12:22:43 INFO  [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-01-08 12:22:44 INFO  [Thread-32] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 12:22:44 INFO  [Thread-32] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-01-08 12:22:44 WARN  [Thread-32] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-01-08 12:22:44 INFO  [Thread-32] HikariDataSource - HikariPool-5 - Shutdown initiated...
+2025-01-08 12:22:44 INFO  [Thread-32] HikariDataSource - HikariPool-5 - Shutdown completed.
+2025-01-08 12:22:44 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 12:22:44 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 12:22:44 INFO  [restartedMain] CustomerPortalApplication - Starting CustomerPortalApplication using Java 1.8.0_202 on ComUnus with PID 17112 (D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend\target\classes started by ComUnus 229 in D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend)
+2025-01-08 12:22:44 DEBUG [restartedMain] CustomerPortalApplication - Running with Spring Boot v2.7.3, Spring v5.3.22
+2025-01-08 12:22:44 INFO  [restartedMain] CustomerPortalApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 12:22:44 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 12:22:44 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
+2025-01-08 12:22:44 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-08 12:22:44 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 394 ms
+2025-01-08 12:22:44 INFO  [restartedMain] HikariDataSource - HikariPool-6 - Starting...
+2025-01-08 12:22:44 INFO  [restartedMain] HikariDataSource - HikariPool-6 - Start completed.
+2025-01-08 12:22:44 INFO  [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:1937daa8-9c0c-4582-961f-0f3405f790f2'
+2025-01-08 12:22:44 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 12:22:44 INFO  [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-01-08 12:22:45 INFO  [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-08 12:22:45 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 12:22:45 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-08 12:22:45 INFO  [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@33026f62, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64948cf6, org.springframework.security.web.context.SecurityContextPersistenceFilter@4353bf40, org.springframework.security.web.header.HeaderWriterFilter@517bc108, org.springframework.web.filter.CorsFilter@6f9d78f7, org.springframework.security.web.authentication.logout.LogoutFilter@6ae7a4d0, com.customer_portal.jwtConfig.JwtTokenValidationFilter@599bcb49, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6191a164, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e6d5fdf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79c2c667, org.springframework.security.web.session.SessionManagementFilter@1b2831ee, org.springframework.security.web.access.ExceptionTranslationFilter@b5536b8, org.springframework.security.web.access.intercept.AuthorizationFilter@28696c3]
+2025-01-08 12:22:45 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08 12:22:45 WARN  [restartedMain] ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2025-01-08 12:22:45 INFO  [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/customer-portal'
+2025-01-08 12:22:45 INFO  [restartedMain] DocumentationPluginsBootstrapper - Context refreshed
+2025-01-08 12:22:45 INFO  [restartedMain] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-01-08 12:22:45 INFO  [restartedMain] ApiListingReferenceScanner - Scanning for api listing references
+2025-01-08 12:22:45 INFO  [restartedMain] CustomerPortalApplication - Started CustomerPortalApplication in 0.987 seconds (JVM running for 327.632)
+2025-01-08 12:22:45 INFO  [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-01-08 12:22:45 INFO  [restartedMain] CustomerPortalApplication - -----------     ****......  Spring Boot Application Run SuccessFully  .....****     ------------
+2025-01-08 12:23:08 INFO  [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-01-08 12:23:08 INFO  [Thread-38] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 12:23:08 INFO  [Thread-38] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-01-08 12:23:08 WARN  [Thread-38] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-01-08 12:23:08 INFO  [Thread-38] HikariDataSource - HikariPool-6 - Shutdown initiated...
+2025-01-08 12:23:08 INFO  [Thread-38] HikariDataSource - HikariPool-6 - Shutdown completed.
+2025-01-08 12:23:08 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 12:23:08 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 12:23:08 INFO  [restartedMain] CustomerPortalApplication - Starting CustomerPortalApplication using Java 1.8.0_202 on ComUnus with PID 17112 (D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend\target\classes started by ComUnus 229 in D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend)
+2025-01-08 12:23:08 DEBUG [restartedMain] CustomerPortalApplication - Running with Spring Boot v2.7.3, Spring v5.3.22
+2025-01-08 12:23:08 INFO  [restartedMain] CustomerPortalApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 12:23:09 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 12:23:09 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
+2025-01-08 12:23:09 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-08 12:23:09 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 385 ms
+2025-01-08 12:23:09 INFO  [restartedMain] HikariDataSource - HikariPool-7 - Starting...
+2025-01-08 12:23:09 INFO  [restartedMain] HikariDataSource - HikariPool-7 - Start completed.
+2025-01-08 12:23:09 INFO  [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:04c49068-f159-48fb-ad3a-27f0925828ee'
+2025-01-08 12:23:09 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 12:23:09 INFO  [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-01-08 12:23:09 INFO  [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-08 12:23:09 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 12:23:09 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-08 12:23:09 INFO  [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2c04fed3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d02899f, org.springframework.security.web.context.SecurityContextPersistenceFilter@181a0b03, org.springframework.security.web.header.HeaderWriterFilter@1f71079a, org.springframework.web.filter.CorsFilter@446c0bf7, org.springframework.security.web.authentication.logout.LogoutFilter@64fead29, com.customer_portal.jwtConfig.JwtTokenValidationFilter@575fb9a3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35603c7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@148c89e0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ca627fd, org.springframework.security.web.session.SessionManagementFilter@5702e4, org.springframework.security.web.access.ExceptionTranslationFilter@23f7041b, org.springframework.security.web.access.intercept.AuthorizationFilter@273692d3]
+2025-01-08 12:23:09 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08 12:23:09 WARN  [restartedMain] ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2025-01-08 12:23:09 INFO  [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/customer-portal'
+2025-01-08 12:23:09 INFO  [restartedMain] DocumentationPluginsBootstrapper - Context refreshed
+2025-01-08 12:23:09 INFO  [restartedMain] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-01-08 12:23:09 INFO  [restartedMain] ApiListingReferenceScanner - Scanning for api listing references
+2025-01-08 12:23:09 INFO  [restartedMain] CustomerPortalApplication - Started CustomerPortalApplication in 0.987 seconds (JVM running for 352.069)
+2025-01-08 12:23:09 INFO  [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-01-08 12:23:09 INFO  [restartedMain] CustomerPortalApplication - -----------     ****......  Spring Boot Application Run SuccessFully  .....****     ------------
+2025-01-08 12:23:14 INFO  [http-nio-8080-exec-3] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-08 12:23:14 INFO  [http-nio-8080-exec-3] DispatcherServlet - Completed initialization in 3 ms
+2025-01-08 12:24:11 INFO  [RMI TCP Connection(30)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-01-08 12:24:12 INFO  [RMI TCP Connection(30)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 12:24:12 INFO  [RMI TCP Connection(30)-127.0.0.1] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-01-08 12:24:12 WARN  [RMI TCP Connection(30)-127.0.0.1] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-01-08 12:24:12 INFO  [RMI TCP Connection(30)-127.0.0.1] HikariDataSource - HikariPool-7 - Shutdown initiated...
+2025-01-08 12:24:12 INFO  [RMI TCP Connection(30)-127.0.0.1] HikariDataSource - HikariPool-7 - Shutdown completed.
+2025-01-08 13:40:40 INFO  [restartedMain] CustomerPortalApplication - Starting CustomerPortalApplication using Java 1.8.0_202 on ComUnus with PID 28204 (D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend\target\classes started by ComUnus 229 in D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend)
+2025-01-08 13:40:40 INFO  [background-preinit] Version - HV000001: Hibernate Validator 6.2.4.Final
+2025-01-08 13:40:40 DEBUG [restartedMain] CustomerPortalApplication - Running with Spring Boot v2.7.3, Spring v5.3.22
+2025-01-08 13:40:40 INFO  [restartedMain] CustomerPortalApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 13:40:40 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 13:40:40 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 13:40:41 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 13:40:41 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+2025-01-08 13:40:42 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-08 13:40:42 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2208 ms
+2025-01-08 13:40:42 INFO  [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+2025-01-08 13:40:42 INFO  [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+2025-01-08 13:40:42 INFO  [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:9ebfd9f6-7808-4a96-b26f-fd55165da206'
+2025-01-08 13:40:42 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 13:40:42 INFO  [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+2025-01-08 13:40:43 INFO  [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-01-08 13:40:43 INFO  [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-01-08 13:40:43 INFO  [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-08 13:40:43 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 13:40:45 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-08 13:40:45 INFO  [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@26b3d704, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a2dd7c, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c9a9737, org.springframework.security.web.header.HeaderWriterFilter@5d68e53f, org.springframework.web.filter.CorsFilter@ec86b09, org.springframework.security.web.authentication.logout.LogoutFilter@4ff8321f, com.customer_portal.jwtConfig.JwtTokenValidationFilter@768e064a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7850aa45, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50ff2a8a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ebde468, org.springframework.security.web.session.SessionManagementFilter@45bfa077, org.springframework.security.web.access.ExceptionTranslationFilter@5ee86978, org.springframework.security.web.access.intercept.AuthorizationFilter@12d63c82]
+2025-01-08 13:40:45 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08 13:40:45 WARN  [restartedMain] ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2025-01-08 13:40:45 INFO  [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/customer-portal'
+2025-01-08 13:40:45 INFO  [restartedMain] DocumentationPluginsBootstrapper - Context refreshed
+2025-01-08 13:40:45 INFO  [restartedMain] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-01-08 13:40:46 INFO  [restartedMain] ApiListingReferenceScanner - Scanning for api listing references
+2025-01-08 13:40:46 INFO  [restartedMain] CustomerPortalApplication - Started CustomerPortalApplication in 6.446 seconds (JVM running for 7.452)
+2025-01-08 13:40:46 INFO  [restartedMain] CustomerPortalApplication - -----------     ****......  Spring Boot Application Run SuccessFully  .....****     ------------
+2025-01-08 13:40:46 INFO  [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-08 13:40:46 INFO  [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 4 ms
+2025-01-08 13:44:27 INFO  [RMI TCP Connection(12)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-01-08 13:44:28 INFO  [RMI TCP Connection(12)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 13:44:28 INFO  [RMI TCP Connection(12)-127.0.0.1] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-01-08 13:44:28 WARN  [RMI TCP Connection(12)-127.0.0.1] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-01-08 13:44:28 INFO  [RMI TCP Connection(12)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-08 13:44:28 INFO  [RMI TCP Connection(12)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-08 15:56:16 INFO  [background-preinit] Version - HV000001: Hibernate Validator 6.2.4.Final
+2025-01-08 15:56:16 INFO  [restartedMain] CustomerPortalApplication - Starting CustomerPortalApplication using Java 1.8.0_202 on ComUnus with PID 20620 (D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend\target\classes started by ComUnus 229 in D:\Shehzaad\Workspace\Spring\customer-portal-backend\customer-portal-backend)
+2025-01-08 15:56:16 DEBUG [restartedMain] CustomerPortalApplication - Running with Spring Boot v2.7.3, Spring v5.3.22
+2025-01-08 15:56:16 INFO  [restartedMain] CustomerPortalApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-08 15:56:16 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-08 15:56:16 INFO  [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-08 15:56:17 INFO  [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08 15:56:17 INFO  [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2025-01-08 15:56:18 INFO  [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-01-08 15:56:18 INFO  [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1307 ms
+2025-01-08 15:56:18 INFO  [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+2025-01-08 15:56:18 INFO  [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+2025-01-08 15:56:18 INFO  [restartedMain] H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:52f5deb5-ca7e-41a3-bf4d-f5fb6a4819ca'
+2025-01-08 15:56:18 INFO  [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08 15:56:18 INFO  [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.10.Final
+2025-01-08 15:56:18 INFO  [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-01-08 15:56:18 INFO  [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2025-01-08 15:56:18 INFO  [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-08 15:56:18 INFO  [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 15:56:19 INFO  [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-08 15:56:19 INFO  [restartedMain] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3cbf488, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68ddb288, org.springframework.security.web.context.SecurityContextPersistenceFilter@509ac3f, org.springframework.security.web.header.HeaderWriterFilter@52ead49a, org.springframework.web.filter.CorsFilter@dc6760c, org.springframework.security.web.authentication.logout.LogoutFilter@6c9614f3, com.customer_portal.jwtConfig.JwtTokenValidationFilter@cdd3f31, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@658a8359, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44a0ea8d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50eee596, org.springframework.security.web.session.SessionManagementFilter@56ca0359, org.springframework.security.web.access.ExceptionTranslationFilter@5b8a25e2, org.springframework.security.web.access.intercept.AuthorizationFilter@52272b42]
+2025-01-08 15:56:19 WARN  [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08 15:56:19 WARN  [restartedMain] ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2025-01-08 15:56:19 INFO  [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/customer-portal'
+2025-01-08 15:56:19 INFO  [restartedMain] DocumentationPluginsBootstrapper - Context refreshed
+2025-01-08 15:56:19 INFO  [restartedMain] DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-01-08 15:56:19 INFO  [restartedMain] ApiListingReferenceScanner - Scanning for api listing references
+2025-01-08 15:56:19 INFO  [restartedMain] CustomerPortalApplication - Started CustomerPortalApplication in 3.37 seconds (JVM running for 4.273)
+2025-01-08 15:56:19 INFO  [restartedMain] CustomerPortalApplication - -----------     ****......  Spring Boot Application Run SuccessFully  .....****     ------------
+2025-01-08 15:56:25 INFO  [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-08 15:56:25 INFO  [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 2 ms
+2025-01-08 15:57:15 INFO  [RMI TCP Connection(4)-127.0.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-01-08 15:57:16 INFO  [RMI TCP Connection(4)-127.0.0.1] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08 15:57:16 INFO  [RMI TCP Connection(4)-127.0.0.1] SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2025-01-08 15:57:16 WARN  [RMI TCP Connection(4)-127.0.0.1] DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2025-01-08 15:57:16 INFO  [RMI TCP Connection(4)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-08 15:57:16 INFO  [RMI TCP Connection(4)-127.0.0.1] HikariDataSource - HikariPool-1 - Shutdown completed.
