@@ -50,8 +50,8 @@ public class UserController {
 		logger.info("active " + checkUserIsActive + " user " + userLogin.getUserName());
 		if (checkUserIsActive == 0) {
 			return new ResponseEntity<>(
-					(new GeneralResponse("User Inactive", 404, "Please Contact System Administration", null)),
-					HttpStatus.OK);
+					(new GeneralResponse("User not found", 404, "No user found, please sign up below", null)),
+					HttpStatus.NOT_FOUND);
 		}
 
 		user = userService.verifyUser(userLogin);
@@ -81,7 +81,7 @@ public class UserController {
 				UserDetail user = userDetailMapper.toEntity(userDto);
 				user = userService.signupUser(user);
 				return new ResponseEntity<>(
-						(new GeneralResponse("Success", 200, "User details updated successfull", user)), HttpStatus.OK);
+						(new GeneralResponse("Success", 200, "User details captured successfully", user)), HttpStatus.OK);
 			}
 
 		} catch (Exception e) {
@@ -90,14 +90,14 @@ public class UserController {
 		return null;
 	}
 
-	@PostMapping("forgotPassword")
+	@PostMapping("/forgotPassword")
 	public ResponseEntity<GeneralResponse> forgotPassword(@Valid @RequestParam String email) {
 
 		try {
 			Integer checkUserIsActive = userRepo.checkUserIsActive(email);
 			if (checkUserIsActive == 0) {
 				return new ResponseEntity<>((new GeneralResponse("No user found", 404,
-						"Please Contact System Administration/Please Sign up", null)), HttpStatus.OK);
+						"Please Contact System Administration/Please Sign up", null)), HttpStatus.NOT_FOUND);
 			} else {
 				String response = userService.sendOtpEmail(email);
 				return new ResponseEntity<>(
@@ -110,7 +110,7 @@ public class UserController {
 		return null;
 	}
 
-	@PostMapping("verifyOtp")
+	@PostMapping("/verifyOtp")
 	public ResponseEntity<GeneralResponse> verifyOtp(@Valid @RequestParam String email,
 			@Valid @RequestParam String otp) {
 
@@ -128,7 +128,7 @@ public class UserController {
 		return null;
 	}
 
-	@PostMapping("updatePassword")
+	@PostMapping("/updatePassword")
 	public ResponseEntity<GeneralResponse> updatePassword(@Valid @RequestParam String email,
 			@Valid @RequestParam String password, @Valid @RequestParam String newPassword) {
 		String response = userService.updatePassword(email, password, newPassword);
